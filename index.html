@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ayurveda & Traditional Indian Medicine — Documentary & Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- optional favicon file (leaf-icon.png) in same folder -->
+    <link rel="icon" type="image/png" href="Images/favicon.ico">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <div class="logo"><img width="52" src="Images/logo.png" alt=""></div>
+                <div class="brd-box">
+                    <h1 class="brd-head">Indian Traditional Medicine</h1>
+                    <div class="sub">Ayurveda • Siddha • Unani • Yoga • Naturopathy • Homeopathy</div>
+                </div>
+            </div>
+
+            <nav class="main-nav" id="mainNav">
+                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#systems">Systems</a>
+                <a class="nav-link" href="#documentary">Documentary</a>
+                <a class="nav-link" href="#notes">Notes</a>
+                <a class="nav-link" href="#simulation">Simulation</a>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#contact">Contact</a>
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="section hero">
+        <div class="container hero-grid">
+            <div class="hero-left">
+                <h2>Trace the roots of ancient healing</h2>
+                <p class="lead">The roots of ancient healing in India lie in the deep connection between humans and
+                    nature. Long before modern medicine, Indian healers understood that true health comes from balance —
+                    within the body, mind, and soul. Through centuries of observation and wisdom, systems like Ayurveda,
+                    Siddha, and Unani evolved, using herbs, natural elements, and spiritual practices to restore harmony
+                    and prevent disease. These traditions formed the foundation of holistic healthcare, reminding us
+                    that healing is not just about curing illness, but about living in tune with nature and nurturing
+                    inner peace.</p>
+                <div class="actions">
+                    <a href="#notes" class="btn">Open Notes</a>
+                    <a href="#documentary" class="btn outline">Watch Documentary Clip</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <img src="Images/Ayurveda herbs.png" alt="Ayurveda herbs">
+            </div>
+        </div>
+    </section>
+
+    <!-- SYSTEMS -->
+    <section id="systems" class="section">
+        <div class="container">
+            <h2>Major Traditional Systems</h2>
+            <p class="muted center">Click on the card to view the summary. (educational only).</p>
+
+
+            <div class="grid" id="systemsGrid">
+                <!-- Ayurveda -->
+
+                <article class="card" data-id="ayurveda">
+                    <img src="Images/Ayurveda.png" alt="Ayurveda">
+                    <div class="card-body">
+                        <h3>Ayurveda</h3>
+                        <p class="review">Ancient system focusing on dosha balance (Vata, Pitta, Kapha). Uses herbs,
+                            diet, therapies (Abhyanga, Panchakarma) and daily routines for prevention & treatment.</p>
+                    </div>
+
+                </article>
+
+                <!-- Siddha -->
+                <article class="card" data-id="siddha">
+                    <img src="Images/Siddha.png" alt="Siddha">
+                    <div class="card-body">
+                        <h3>Siddha</h3>
+                        <p class="review">South-Indian tradition with unique mineral-herbal formulations,
+                            pulse/diagnostic traditions, and yogic practices developed by Siddhars.</p>
+                    </div>
+                </article>
+
+                <!-- Unani -->
+                <article class="card" data-id="unani">
+                    <img src="Images/Unani.png" alt="Unani">
+                    <div class="card-body">
+                        <h3>Unani</h3>
+                        <p class="review">Greco-Arabic system emphasizing the four humors; treatment via diet, regimen
+                            and herbal medicines to restore humoral balance.</p>
+                    </div>
+                </article>
+
+                <!-- Yoga -->
+                <article class="card" data-id="yoga">
+                    <img src="Images/Yoga.png" alt="Yoga">
+                    <div class="card-body">
+                        <h3>Yoga</h3>
+                        <p class="review">Practice of asana, pranayama and meditation for physical, mental and spiritual
+                            well-being; often integrated with other medical systems.</p>
+                    </div>
+                </article>
+
+                <!-- Naturopathy -->
+                <article class="card" data-id="naturopathy">
+                    <img src="Images/Naturopathy.png" alt="Naturopathy">
+                    <div class="card-body">
+                        <h3>Naturopathy</h3>
+                        <p class="review">Emphasizes natural methods—nutrition, water therapy, sunlight—to stimulate the
+                            body's self-healing capacity and prevent disease.</p>
+                    </div>
+                </article>
+
+                <!-- Homeopathy -->
+                <article class="card" data-id="homeopathy">
+                    <img src="Images/Hoemopathy.png" alt="Homeopathy">
+                    <div class="card-body">
+                        <h3>Homeopathy</h3>
+                        <p class="review">System developed by Hahnemann using highly-diluted remedies chosen by
+                            'similarity of symptoms'; often used as supportive symptomatic care.</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- detail panel -->
+            <div id="detailPanel" class="detail-panel hidden">
+                <button id="closeDetail" class="close">&times;</button>
+                <div id="detailContent"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOCUMENTARY (video embed) -->
+    <section id="documentary" class="section">
+        <div class="container">
+            <h2>Documentary Clip</h2>
+            <!-- <p class="muted center">Short documentary excerpt explaining Ayurveda’s history and modern clinics
+                (educational demo).</p> -->
+
+            <div class="video-wrap">
+                <!-- Example educational video: you can replace the src with an actual YouTube documentary link -->
+                <iframe width="734%" height="412" src="Video/Ayurveda Vi.mp4" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+                <div class="Vd-text">
+                    <h3>
+                        Summary
+                    </h3>
+                    <p>
+                        Ayurveda, Siddha, Unani, Yoga, Naturopathy, and Homeopathy are traditional and alternative
+                        systems of medicine that emphasize holistic health and natural healing. Ayurveda, originating in
+                        India, focuses on balancing the three doshas — Vata, Pitta, and Kapha — through diet, herbs, and
+                        lifestyle. Siddha, from South India, uses herbs, minerals, and metals to balance Vatham, Pitham,
+                        and Kabam for longevity and spiritual growth. Unani, with roots in Greece and the Arab world,
+                        maintains health by balancing four humors — blood, phlegm, yellow bile, and black bile — using
+                        natural therapies. Yoga promotes harmony between body, mind, and soul through postures,
+                        breathing, and meditation. Naturopathy believes the body can heal itself through natural means
+                        like diet, sunlight, air, and exercise. Homeopathy, developed in Germany, is based on the
+                        principle of “like cures like,” using highly diluted natural substances to stimulate the body’s
+                        self-healing power. Together, these systems highlight the importance of prevention, balance, and
+                        harmony in achieving complete well-being.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NOTES (detailed per-system) -->
+    <section id="notes" class="section notes">
+        <div class="container">
+            <h2>Notes & Research — Summary</h2>
+            <p class="muted center">Comprehensive notes from introduction to history, founders, timelines and modern
+
+
+            <article class="note" id="note-ayurveda">
+                <h3>Ayurveda — Introduction & History</h3>
+                <p><strong>Introduction:</strong> Ayurveda, meaning “Science of Life,” is an ancient system of medicine
+                    from India that focuses on holistic health and natural healing. It emphasizes the balance of the
+                    body, mind, and spirit to maintain wellness and prevent disease. Ayurveda uses herbs, diet,
+                    lifestyle practices, yoga, and detoxification therapies to promote long-term health.
+                </p>
+                <p><strong>History:</strong> Ayurveda has been practiced for over 5,000 years, making it one of the
+                    oldest medical systems in the world. Its roots are found in the Vedic texts, and it was later
+                    elaborated in classical works like the Charaka Samhita and Sushruta Samhita. Ancient Indian sages
+                    observed nature and human physiology carefully, developing principles of health, disease, and
+                    treatment. Over centuries, Ayurveda evolved into a complete science of life, guiding not only
+                    healing but also lifestyle, diet, and spiritual well-being.
+                </p>
+                <p><strong>Core Principles:</strong> Ayurveda is based on the concept of the three doshas —
+                    <br>
+                    Vata (Air and Space): Controls movement, breathing, and flexibility.
+                    <br>
+                    Pitta (Fire and Water): Governs digestion, metabolism, and energy.
+
+                    Kapha (Earth and Water): Maintains strength, stability, and immunity.
+                    <br>
+                    Good health is achieved when these doshas are in balance. Imbalance causes disease..
+                </p>
+                <p><strong>Healing Methods:</strong> Ayurveda uses a wide range of natural methods to restore balance,
+                    such as:
+                    <br>
+
+                    Herbal medicines and plant-based treatments
+                    <br>
+                    Diet and nutrition according to body type (Prakriti)
+                    <br>
+                    Detox therapies like Panchakarma
+                    <br>
+                    Yoga, meditation, and massage for mental and physical well-being
+                </p>
+                <p><strong>Goal of Ayurveda:</strong> The main goal of Ayurveda is not just to cure illness, but to
+                    promote a long, healthy, and harmonious life. It teaches how to live in sync with nature’s rhythms
+                    and maintain physical, mental, and emotional balance..</p>
+                <p><strong>Modern relevance:</strong> Widely used in India and globally for chronic wellness, lifestyle
+                    medicine, and integrative care; research is ongoing for efficacy and safety of specific
+                    formulations.</p>
+            </article>
+
+            <article class="note" id="note-siddha">
+                <h3>Siddha — Introduction & History</h3>
+                <p><strong>Introduction:</strong> The Siddha system of medicine is one of India’s oldest traditional
+                    healing practices, believed to have originated in South India, particularly Tamil Nadu. The word
+                    Siddha comes from Siddhi, meaning “perfection” or “achievement,” reflecting the system’s goal of
+                    attaining perfect health and spiritual well-being. Siddha medicine views health as a state of
+                    balance between the body, mind, and spirit, emphasizing harmony with nature and the use of natural
+                    substances for healing..</p>
+                <p><strong>History:</strong> The roots of Siddha medicine date back over 5,000 years, and it is said to
+                    have been developed by the Siddhars — ancient Tamil sages who possessed deep knowledge of medicine,
+                    alchemy, yoga, and spirituality. The Siddhars documented their wisdom in Tamil scriptures known as
+                    Palm Leaf Manuscripts, covering topics like anatomy, diseases, herbs, minerals, and metals. Among
+                    the 18 Siddhars, Agastya is considered the founding father of Siddha medicine. Over centuries, this
+                    knowledge was passed down through generations, becoming a unique medical system practiced mainly in
+                    South India.</p>
+                <p><strong>Core Principles:</strong> Siddha medicine is based on the concept of three humors —
+                    <br>
+                    Vatham (Air and Space): Controls movement, breathing, and circulation.
+                    <br>
+                    Pitham (Fire): Governs digestion, metabolism, and energy.
+                    <br>
+                    Kabam (Water and Earth): Provides strength, stability, and lubrication.
+                    <br>
+                    A balanced state of these humors ensures health, while imbalance causes disease. Siddha also
+                    recognizes five elements — earth, water, fire, air, and ether — that make up the human body and the
+                    universe.
+                </p>
+                <p><strong>Healing Methods:</strong> Siddha uses a wide range of natural therapies to restore balance
+                    and promote healing, including:
+                    <br>
+                    Herbal formulations made from plants and roots
+                    <br>
+                    Mineral and metallic preparations after purification
+                    <br>
+                    Dietary and lifestyle regulation according to body type
+                    <br>
+                    Yoga and meditation for physical and spiritual harmony
+                    <br>
+                    External therapies like oil application, steam, and massage
+                </p>
+                <p><strong>Goal of Siddha Medicine:</strong> The main goal of Siddha medicine is not only to cure
+                    diseases but also to help individuals achieve perfect health, longevity, and spiritual
+                    enlightenment. It teaches that maintaining balance between the body’s energies leads to both
+                    physical well-being and inner peace.</p>
+                <p><strong>Modern relevance:</strong> In modern times, Siddha medicine continues to play an important
+                    role in holistic healthcare. It is officially recognized by India’s Ministry of AYUSH and practiced
+                    widely across Tamil Nadu and other parts of the country. Many Siddha remedies are being researched
+                    scientifically for their effectiveness in treating chronic illnesses and promoting wellness. With
+                    its focus on natural healing, prevention, and spiritual growth, Siddha medicine remains a valuable
+                    part of India’s traditional medical heritage and a source of inspiration for integrative health
+                    systems worldwide..</p>
+            </article>
+
+            <article class="note" id="note-unani">
+                <h3>Unani — Introduction & History</h3>
+                <p><strong> Introduction:</strong> Unani medicine, also known as Unani Tibb, is a traditional system of
+                    healing that emphasizes balance in the body, mind, and environment. It focuses on maintaining health
+                    and treating diseases through natural means like diet, herbs, and lifestyle management. The word
+                    Unani means “Greek,” as its origins are linked to ancient Greece, but it was later enriched by Arab
+                    and Persian scholars before flourishing in India. The system is based on holistic care, combining
+                    science, philosophy, and natural therapy.</p>
+                <p><strong>History:</strong>Unani medicine traces its roots to the teachings of ancient Greek physicians
+                    such as Hippocrates and Galen, who first introduced the idea that health depends on the balance of
+                    bodily fluids. Arab scholars, especially Avicenna (Ibn Sina), expanded this knowledge by compiling
+                    medical texts like The Canon of Medicine. During the medieval period, Unani medicine reached India
+                    through the Persians and became an important part of the country’s healthcare system under Mughal
+                    rule. Over time, Indian scholars adapted Unani practices to local conditions, making it an integral
+                    part of India’s traditional medical heritage.</p>
+                <p><strong>Core Principles:</strong> Unani medicine is built on the theory of four humors (Akhlat):
+                    <br>
+                    Dam (Blood) – associated with warmth and moistness.
+                    <br>
+                    Balgham (Phlegm) – represents coldness and moisture.
+                    <br>
+                    Safra (Yellow bile) – signifies heat and dryness.
+                    <br>
+                    Sauda (Black bile) – relates to coldness and dryness.
+                    <br>
+
+                    Health is maintained when these humors are in balance; imbalance leads to illness. The Unani system
+                    also recognizes four natural temperaments (Mizaj) — sanguine, phlegmatic, choleric, and melancholic
+                    — which define an individual’s physical and emotional nature..
+                </p>
+                <p><strong>Healing Methods:</strong> Unani healing focuses on restoring balance through natural and
+                    gentle therapies, including:
+                    <br>
+                    Ilaj bil Ghiza (Diet therapy): Managing health through food and nutrition.
+                    <br>
+                    Ilaj bil Dawa (Drug therapy): Use of herbal and natural medicines.
+                    <br>
+                    Ilaj bil Tadbeer (Regimental therapy): Techniques like cupping (Hijama), massage, exercise, steam
+                    baths, and bloodletting to detoxify the body.
+                    <br>
+                    Ilaj bil Yad (Surgery): Minor surgical procedures when necessary.
+                    <br>
+                    Ilaj bil Nafas (Psychotherapy): Mental healing through counseling and lifestyle balance.
+                </p>
+                <p><strong>Goal of Unani Medicinee:</strong> The main goal of Unani medicine is to preserve health and
+                    prevent illness by maintaining the natural balance of the humors. It also seeks to strengthen the
+                    body’s innate ability to heal itself and promote overall harmony between the physical and spiritual
+                    aspects of life.</p>
+                <p><strong>Modern relevance:</strong> Unani medicine continues to hold great importance in today’s world
+                    as a natural, preventive, and holistic healthcare system. It is officially recognized by India’s
+                    Ministry of AYUSH and practiced widely in South Asia and the Middle East. Modern research has begun
+                    validating many Unani remedies for chronic and lifestyle-related diseases. Its gentle, personalized
+                    approach makes it highly relevant in promoting sustainable and integrative healthcare, blending the
+                    wisdom of ancient science with modern medical understanding.</p>
+            </article>
+
+            <article class="note" id="note-yoga">
+                <h3>Yoga — Introduction & History</h3>
+                <p><strong>Introduction:</strong>Yoga is an ancient practice that combines physical postures, breathing
+                    techniques, meditation, and spiritual discipline to achieve harmony between the mind, body, and
+                    soul. Originating from India, yoga promotes inner peace, self-awareness, and holistic well-being,
+                    making it one of the most popular wellness practices worldwide.</p>
+                <p><strong> History:</strong> The origins of yoga date back over 5,000 years to ancient India. Its
+                    earliest references are found in the Vedas and Upanishads, sacred Hindu scriptures. The sage
+                    Patanjali later systematized yoga in his text, the Yoga Sutras, outlining its philosophy and
+                    practice. Over centuries, various schools of yoga evolved — such as Hatha Yoga, Raja Yoga, Bhakti
+                    Yoga, and Karma Yoga — each focusing on different paths to spiritual growth.</p>
+                <p><strong>Core Principles:</strong>The foundation of yoga rests on key principles that promote balance
+                    and harmony:
+                    <br>
+                    Asanas (Postures): Physical exercises that build strength, flexibility, and balance.
+                    <br>
+                    Pranayama (Breath Control): Techniques to regulate life energy through breathing.
+                    <br>
+                    Dhyana (Meditation): Calming the mind to achieve focus and awareness.
+                    <br>
+                    Yamas and Niyamas (Ethical Disciplines): Moral and spiritual guidelines for a balanced life.
+                    <br>
+                    Samadhi (Union): The ultimate goal—unity of the self with the divine consciousness.
+                </p>
+                <p><strong>Healing Methods:</strong> Yoga heals by integrating physical movement with mental focus and
+                    breath control. Its therapeutic methods include:
+                    <br>
+                    Physical Therapy: Improves posture, flexibility, and strength.
+                    <br>
+                    Mental Relaxation: Reduces stress, anxiety, and depression.
+                    <br>
+                    Breath Regulation: Enhances lung function and energy flow.
+                    <br>
+                    Holistic Healing: Balances the body’s systems and promotes natural immunity..
+                </p>
+                <p><strong>Goal of Yoga:</strong> The main goal of Yoga is to achieve harmony between the body, mind,
+                    and spirit. It aims to bring balance to all aspects of life—physical, mental, emotional, and
+                    spiritual—leading to inner peace and self-realization.
+                    Through regular practice of asanas (postures), pranayama (breathing techniques), and meditation,
+                    yoga helps individuals:
+                    <br>
+
+                    Develop physical strength, flexibility, and balance
+                    <br>
+
+                    Cultivate mental clarity and emotional stability
+                    <br>
+
+                    Attain self-awareness and spiritual growth
+                    <br>
+
+                    Ultimately, the highest goal of yoga is “union with the divine consciousness”—a state of complete
+                    harmony and enlightenment known as Samadhi.
+                </p>
+                <p><strong>Modern relevance:</strong> In today’s fast-paced world, yoga has become a global movement for
+                    wellness. It is widely practiced for fitness, stress relief, and emotional balance. Recognized by
+                    the United Nations, International Yoga Day is celebrated every year on June 21. Modern yoga blends
+                    traditional wisdom with scientific research, making it a vital tool for mental and physical health
+                    in the 21st century.</p>
+            </article>
+
+            <article class="note" id="note-naturopathy">
+                <h3>Naturopathy — Introduction & History</h3>
+                <p><strong>Introduction:</strong>Naturopathy is a system of natural healing that emphasizes the body’s
+                    inherent ability to heal itself through natural methods. It focuses on promoting overall wellness by
+                    using lifestyle management, diet, exercise, and natural therapies instead of drugs or invasive
+                    procedures. Naturopathy seeks to treat the root cause of disease, not just its symptoms.p>
+                <p><strong>History:</strong> The roots of naturopathy go back to ancient civilizations such as India,
+                    Greece, and China, where natural healing practices were common. Modern naturopathy emerged in the
+                    late 19th century, developed by Dr. Benedict Lust in Germany and the United States. In India,
+                    naturopathy was influenced by traditional healing systems like Ayurveda and Yoga and later became a
+                    recognized alternative healthcare system promoted by Mahatma Gandhi, who practiced and supported
+                    natural living.</p>
+                <p><strong>Core Principles:</strong> Naturopathy is based on a few fundamental principles:
+                    <br>
+                    The Healing Power of Nature (Vis Medicatrix Naturae): The body has an inbuilt ability to heal
+                    itself.
+                    <br>
+                    Identify and Treat the Cause: Focus on eliminating the root cause, not just symptoms.
+                    <br>
+                    Do No Harm: Use safe and gentle treatments.
+                    <br>
+                    Doctor as Teacher: Educate patients about healthy living.
+                    <br>
+                    Treat the Whole Person: Consider physical, mental, emotional, and spiritual aspects.
+                    <br>
+                    Prevention is Better Than Cure: Emphasize lifestyle and diet to maintain health.
+                </p>
+                <p><strong>Healing Methods:</strong> Naturopathy uses a wide range of natural therapies to promote
+                    wellness, including:
+                    <br>
+                    Diet Therapy: Balanced nutrition and natural foods for detoxification and healing.
+                    <br>
+                    Hydrotherapy: Use of water (baths, compresses, packs) for therapy and cleansing.
+                    <br>
+                    Mud Therapy: Applying therapeutic mud to improve circulation and remove toxins.
+                    <br>
+                    Massage and Exercise Therapy: To improve blood flow, flexibility, and relaxation.
+                    <br>
+                    Fasting Therapy: Cleansing the body through controlled fasting.
+                    <br>
+                    Chromotherapy, Magnet Therapy, and Acupuncture: Additional natural techniques for energy balance.
+                </p>
+                <p><strong>Goal of Naturopathy:</strong> The goal of naturopathy is to restore the body’s natural
+                    balance and promote self-healing. It aims to prevent diseases, strengthen the immune system, and
+                    encourage a healthy lifestyle that aligns with nature. Rather than just curing illness, naturopathy
+                    focuses on total wellness and long-term health.</p>
+                <p><strong>Modern relevance:</strong>In today’s world, naturopathy has gained significant importance as
+                    people seek natural, holistic, and preventive healthcare options. It complements modern medicine by
+                    promoting wellness through diet, detoxification, stress management, and natural therapies.
+                    Recognized by health organizations worldwide, naturopathy continues to inspire a global movement
+                    toward sustainable and natural living.</p>
+            </article>
+
+            <article class="note" id="note-homeopathy">
+                <h3>Homeopathy — Introduction & History</h3>
+                <p><strong>Introduction:</strong> Homeopathy is a natural system of medicine that stimulates the body’s
+                    own healing power using highly diluted substances. It follows the idea that the body can cure itself
+                    when given the right stimulus. The remedies are derived from natural sources such as plants,
+                    minerals, and animals, and are known for being gentle, safe, and effective without side effects.</p>
+                <p><strong>History:</strong> Homeopathy was developed in the late 18th century by Dr. Samuel Hahnemann,
+                    a German physician. He introduced the principle of “Similia Similibus Curentur” — meaning “like
+                    cures like.” This idea came from his observation that a substance causing certain symptoms in a
+                    healthy person could, in minute doses, cure similar symptoms in a sick person. Homeopathy spread
+                    worldwide, and today it is recognized as one of the most widely practiced alternative medical
+                    systems, especially in India and Europe.</p>
+                <p><strong>Core Principles:</strong>Homeopathy is built on a few fundamental laws and principles:
+                    <br>
+                    Law of Similars: “Like cures like” — substances that cause symptoms can also relieve them when
+                    highly diluted.
+                    <br>
+                    Law of Minimum Dose: The smaller the dose, the greater its healing effect. Remedies are prepared
+                    through a process called potentization.
+                    <br>
+                    Individualization: Each person is treated as unique; remedies are chosen based on the totality of
+                    physical, mental, and emotional symptoms.
+                    <br>
+                    Holistic Approach: Homeopathy treats the person as a whole rather than targeting only the disease.
+                </p>
+                <p><strong>Healing Methods:</strong>Homeopathy uses natural remedies prepared from plants, minerals, and
+                    animal substances. These remedies are administered in minute doses to gently stimulate the body’s
+                    healing response. Treatments are given in the form of:
+                    <br>
+                    Sugar pellets or globules
+                    <br>
+                    Diluted liquid drops
+                    <br>
+                    Tablets or tinctures
+                    <br>
+                    Homeopathic treatment involves a detailed case study of the patient’s physical symptoms, emotions,
+                    and lifestyle to find the most suitable remedy.
+                </p>
+                <p><strong>Goal of Homeopathy:</strong> The primary goal of homeopathy is to restore balance and harmony
+                    in the body by triggering its natural healing process. It aims not just to relieve symptoms but to
+                    address the underlying cause of illness and enhance overall vitality. Homeopathy promotes long-term
+                    health and prevention of diseases by strengthening the body’s defenses..</p>
+                <p><strong>Modern relevance:</strong> The primary goal of homeopathy is to restore balance and harmony
+                    in the body by triggering its natural healing process. It aims not just to relieve symptoms but to
+                    address the underlying cause of illness and enhance overall vitality. Homeopathy promotes long-term
+                    health and prevention of diseases by strengthening the body’s defenses.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- SIMULATION -->
+    <section id="simulation" class="section">
+        <div class="container">
+            <h2>Mock Clinic Simulation</h2>
+            <p class="muted center">Choose a system and symptom to see a demo recommendation (educational only).</p>
+
+            <div class="sim-grid">
+                <div class="sim-col">
+                    <label for="simSystem">System</label>
+                    <select id="simSystem">
+                        <option value="ayurveda">Ayurveda</option>
+                        <option value="siddha">Siddha</option>
+                        <option value="unani">Unani</option>
+                        <option value="yoga">Yoga</option>
+                        <option value="naturopathy">Naturopathy</option>
+                        <option value="homeopathy">Homeopathy</option>
+                    </select>
+                </div>
+
+                <div class="sim-col">
+                    <label for="simSymptom">Symptom</label>
+                    <select id="simSymptom">
+                        <option value="indigestion">Indigestion</option>
+                        <option value="stress">Stress / Anxiety</option>
+                        <option value="insomnia">Insomnia</option>
+                        <option value="cold">Common cold</option>
+                    </select>
+                </div>
+
+                <div class="sim-col actions">
+                    <button id="runSim" class="btn">Run Simulation</button>
+                    <button id="clearSim" class="btn outline">Clear</button>
+                </div>
+            </div>
+
+            <div id="simResult" class="sim-result"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Indian Traditional Medicine</h2>
+            <p>Indian Traditional Medicine is one of the world’s oldest systems of healing, deeply connected to nature
+                and the human spirit. For thousands of years, India has nurtured rich medical traditions that focus not
+                only on curing diseases but also on maintaining balance and promoting overall well-being. These ancient
+                practices are based on the belief that good health comes from harmony between the body, mind, and
+                soul.<br>
+
+                Among the most well-known branches are Ayurveda, Siddha, Unani, Yoga, Naturopathy, and Homeopathy. Each
+                system has its own philosophy and methods, but they all share one goal — to help people live healthy,
+                peaceful, and natural lives. They use herbs, minerals, diet, exercise, and spiritual practices to heal
+                the body from within, rather than just treating symptoms.<br>
+
+                Ayurveda teaches that balance in the three doshas — Vata, Pitta, and Kapha — is the key to health.
+                Siddha, which developed in South India, uses powerful natural medicines to purify the body and extend
+                life. Unani, with roots in Greece and Arabia, focuses on restoring the body’s four humors to achieve
+                harmony. Yoga improves both physical and mental health through movement, breathing, and meditation.
+                Naturopathy heals using the elements of nature like air, water, and sunlight, while Homeopathy uses
+                gentle, natural remedies to stimulate the body’s healing power.<br>
+
+                Together, these systems form the heart of India’s healing heritage. Even in the modern world, Indian
+                Traditional Medicine continues to inspire people to live naturally, think positively, and stay connected
+                with nature. It reminds us that true health is not just the absence of illness, but the presence of
+                balance, energy, and inner peace.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact / Contribute</h2>
+            <p class="muted">If you have references, corrections, or contributions to the notes or documentary, please
+                contact.</p>
+            <form id="contactForm" class="contact-form" autocomplete="off">
+                <input id="cname" type="text" placeholder="Your name" required>
+                <input id="cemail" type="email" placeholder="Your email" required>
+                <select id="cinterest">
+                    <option value="">Topic of interest</option>
+                    <option value="ayurveda">Ayurveda</option>
+                    <option value="siddha">Siddha</option>
+                    <option value="unani">Unani</option>
+                    <option value="yoga">Yoga</option>
+                    <option value="naturopathy">Naturopathy</option>
+                    <option value="homeopathy">Homeopathy</option>
+                    <option value="general">General / Documentary</option>
+                </select>
+                <textarea id="cmessage" rows="4" placeholder="Message" required></textarea>
+                <div class="form-actions">
+                    <button type="submit" class="btn">Send</button>
+                    <div id="formMsg" class="muted"></div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container center">
+            <marquee>
+                <small>© 2025 — Educational Project • Not medical advice</small>
+            </marquee>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
